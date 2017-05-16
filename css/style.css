@@ -1,0 +1,205 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll; /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+	/*Internet Explorerが独自に追加したプロパティ*/
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+/* リセットおまじない--------------------------------- */
+
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+/* --------------------------------------------------- */
+
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+}
+
+/header {
+	height: 60px;
+	background: #111;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+}
+header ul {
+	width: 900px; /* 文字が開業されるので100pxプラス */
+	margin: 0 auto;
+	display: block;
+}
+header li {
+	display: block;
+	color: #ddd;
+	width: 16%; /* liが改行されるので調整 */
+	line-height: 60px;
+}
+section {
+	text-align: center;
+	padding: 100px 0;
+}
+section h1 {
+	font-size: 40px;
+	line-height: 50px;
+	margin: 0 0 80px 0;
+	font-weight: 200;
+}
+.box {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#sec1 {
+	background: url(../img/photo_01.jpg) no-repeat center center;
+	height: 400px;
+	/* 以下4行は各ブラウザに対して設定しています。 */
+	-webkit-background-size: cover; /* chrome */
+	-moz-background-size: cover; /* firefox */
+	-o-background-size: cover; /* opera */
+	background-size: cover; /* 上記以外 */
+}
+#sec1 h1 {
+	font-size: 55px;
+	color: #fff;
+	padding: 180px 0 0 0;
+}
+#sec1 h1 br {
+	display: none;
+	/* スマートフォンとPCでは画面幅が違うので、PC用のレイアウトでいれた改行が */
+	/* スマートフォン用のレイアウトできれいに改行されるとは限らないので none で消す */
+}
+#sec2 .float_area {
+	*zoom: 1;
+	/* IE7以下への対策  http://tabayashi.com/dev/null/1390  */
+	/* zoomに関してはこちら参照 http://www.htmq.com/style/zoom.shtml */
+}
+
+/* 注意： ::beforeという擬似要素がフロート解除しているわけではありません */
+/* float_areaクラスの直前にブロック要素を生成し、float_areaクラス内でフロートさせた要素のスタイル崩れを防ぐ */
+/* IEエクスプローラー用の対策 参考→ http://kojika17.com/2013/06/clearfix-2013.html  */
+#sec2 .float_area::before {
+	content: " ";
+	display: table;
+}
+
+/* 注意： ::afterという擬似要素がフロート解除しているわけではありません */
+/* float_areaクラスの直後にブロック要素を生成し、clear:bothでフロート解除 */
+#sec2 .float_area::after { /* フロート解除参考 http://kojika17.com/2013/06/clearfix-2013.html */
+	content: " ";
+	display: table;
+	clear: both;
+}
+#sec2 .float_area div {
+	float: left;
+	width: 29%;
+	margin: 0 2%;
+	text-align: left;
+}
+#sec2 .float_area div h2 {
+	font-size: 20px;
+	margin: 0 0 20px 0;
+}
+#sec2 .float_area div p {
+	font-size: 14px;
+	line-height: 1.8;
+	margin-bottom: 14px;
+}
+
+#sec3 {
+	background: url(../img/photo_02.jpg) no-repeat center center;
+	/* 以下4行は各ブラウザに対して設定しています。 */
+	-webkit-background-size: cover; /* chrome */
+	-moz-background-size: cover; /* firefox */
+	-o-background-size: cover; /* opera */
+	background-size: cover; /* 上記以外 */
+	color: #fff;
+}
+#sec3 p {
+	font-size: 16px;
+	line-height: 2;
+	margin-bottom: 16px;
+}
+#sec4 p {
+	font-size: 15px;
+	line-height: 2;
+	margin-bottom: 15px;
+}
+#sec4 .port ul {
+	padding: 80px 0;
+	margin-right: -30px; /* ここを消して #sec4 .port li:nth-child(4n) の部分を適用しても同じ */
+	*zoom: 1;
+	/* IE7以下への対策  http://tabayashi.com/dev/null/1390  */
+	/* zoomに関してはこちら参照 http://www.htmq.com/style/zoom.shtml */
+}
+
+/* 上の margin-right を消して↓を反映させても同じ */
+/*#sec4 .port li:nth-child(4n) {
+	margin-right: -30px;
+}*/
+
+/* 注意： ::beforeという擬似要素がフロート解除しているわけではありません */
+/* float_areaクラスの直前にブロック要素を生成し、float_areaクラス内でフロートさせた要素のスタイル崩れを防ぐ */
+/* IEエクスプローラー用の対策 参考→ http://kojika17.com/2013/06/clearfix-2013.html  */
+#sec4 .port ul::before {
+	content: " ";
+	display: table;
+}
+
+/* 注意： ::afterという擬似要素がフロート解除しているわけではありません */
+/* float_areaクラスの直後にブロック要素を生成し、clear:bothでフロート解除 */
+#sec4 .port ul::after { /* フロート解除参考 http://kojika17.com/2013/06/clearfix-2013.html */
+	content: " ";
+	display: table;
+	clear: both;
+}
+#sec4 .port li {
+	: left;
+	width: 277px;
+	margin: 0 30px 30px 0;
+	text-align: left;
+}
+#sec4 .port li img {
+	width: 100%;
+}
+#sec4 .port li p {
+	font-size: 14px;
+	margin: 5px 0;
+}
+footer {
+	height: 80px;
+	background: #111;
+}
+footer .copyright {
+	color: #aaa;
+	font-size: 12px;
+	padding-top: 30px;
+	letter-spacing: 1px;
+}
+
+/* 追加した箇所 */
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+	background: blue;
+}

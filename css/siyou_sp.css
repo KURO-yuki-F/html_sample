@@ -1,0 +1,176 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll;
+}
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+}
+
+
+/*
+header {
+	位置 固定
+	横幅 100%
+}
+header .hum_menu {
+	位置 絶対
+	右 距離 0px
+	上 距離 0px
+}
+header .hum_menu a {
+	ブロック要素
+	高さ 20px
+	横 40px
+	パディング 上下 10px 左右 0px
+	背景 #111
+	文字中央寄せ
+}
+header .hum_menu span {
+	ブロック要素
+	高さ 2px
+	横幅 20px
+	背景 #aaa
+	マージン 上下 3px 左右 auto
+}
+header ul {
+	要素を消す (非表示じゃないよ)
+	マージン 右 40px
+}
+header ul li {
+	左に浮かせる
+	横幅 50%
+	色 #ccc
+	行の高さ 40px
+	文字左寄せ
+	文字の大きさ 12px
+	文字のインデント 8px
+}
+header ul li a {
+	ブロック要素
+	線 1px solid #555
+	線の幅  上 1px 右 1px 下 0 左 0
+}
+header.open {
+	背景 #111
+}
+header.open ul {
+	ブロック要素
+}
+footer {
+	高さ 80px
+	背景 #111
+}
+footer .copyright {
+	色 #aaa
+	文字の大きさ 12px
+	パディング上 30px
+	文字幅 1px
+}
+section {
+	パディング 上下50px 左右15px
+	文字左寄せ
+}
+section h1 {
+	文字の大きさ 20px
+	行の高さ 35px
+	マージン 下40px
+	文字の太さ 200
+}
+#sec1 {
+	背景 photo_01
+	リピート無し
+	位置 真ん中 真ん中
+	背景のサイズ cover
+}
+#sec1 h1 {
+	文字の大きさ 30px
+	色 #fff
+}
+#sec2 .float_area div {
+	文字左寄せ
+}
+#sec2 .float_area div h2 {
+	文字の大きさ 14px
+	マージン 上30px 下10px 左右0
+}
+#sec2 .float_area div p {
+	文字の大きさ 12px
+	行の高さ 1.8
+	マージン 下 14px
+}
+#sec3 {
+	背景 photo_02
+	リピート無し
+	位置 真ん中 真ん中
+	背景のサイズ cover
+	色 #fff
+}
+#sec3 p {
+	文字の大きさ 13px
+	行の高さ 2
+	マージン 下 15px
+}
+#sec3 p br {
+	要素を消す (非表示じゃないよ)
+}
+#sec4 p {
+	文字の大きさ 12px
+	行の高さ 1.8
+	マージン 下 15px
+}
+#sec4 p br {
+	要素を消す (非表示じゃないよ)
+}
+#sec4 .port ul {
+	パディング 上下 20px 左右 0
+	マージン 上下 0 左右 -15px
+	*zoom: 1;
+}
+#sec4 .port ul::before {
+	フロート解除
+	(PC版スタイルシートと同じ)
+}
+#sec4 .port ul::after {
+	フロート解除
+	(PC版スタイルシートと同じ)
+}
+#sec4 .port li {
+	左に浮かせる
+	横幅 50%
+	マージン 下 15px
+	文字左寄せ
+}
+#sec4 .port li img {
+	横幅 100%
+}
+#sec4 .port li p {
+	文字の大きさ 11px
+	マージン 上下 2px 左右 0
+	文字中央寄せ
+}
+
+*/

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="サイトをキーワードで説明">
+  <meta name="description" contents="どんなさいとかを短い文章で説明">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 769px )" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px )" href="./css/style_sp.css">
+
+
+  <script type="text/javascript" src= "http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src= "./js/jquery.bxslider/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" type="text/css" href= "./js/jquery.bxslider/jquery.bxslider.css">
+  <script type="text/javascript" src ="https://rawgithub.com/briangonzalez/jquery.pep.js/master/src/jquery.pep.js" ></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+  <script type="text/javascript" src="./js/common.js"></script>
+
+  <title>月木でわかる　HTML5 & CSS3</title>
+</head>
+
+<body class="drawer drawer--right" >
+    <header>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="#sec1" id="menu-sec1">見出しのエリア</a></li>
+          <li><a class="drawer-menu-item" href="#sec2" id="menu-sec2">floatのエリア</a></li>
+          <li><a class="drawer-menu-item" href="#sec3" id="menu-sec3">センタリングエリア</a></li>
+          <li><a class="drawer-menu-item" href="#sec4" id="menu-sec4">制作実績</a></li>
+          <li>
+            <a class="drawer-menu-item" href="#" id="lng-ja">日本語</a>
+            <a class="drawer-menu-item" href="#" id="lng-en">English</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="#" id="bg-blue">Blue</a>
+            <a class="drawer-menu-item" href="#" id="bg-red">Red</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- <header class="">
+  <div class="hum_menu">
+    <a href="javascript:void(0);">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+  </div>
+  <ul>
+    <li><a href="#sec1">見出しのエリア</a></li>
+    <li><a href="#sec2">floatのエリア</a></li>
+    <li><a href="#sec3">センタリングエリア</a></li>
+    <li><a href="#sec4">制作実績</a></li>
+  </ul>
+</header> -->
+
+  <article>
+    <section id="sec1">
+      <h1>月木でわかる<br>HTML5 &amp; CSS3</h1>
+
+    </section>
+
+    <section id="sec2">
+      <h1>3つのブロックエリア<br>floatとの上手な付き合い方</h1>
+      <div class="box float_area">
+        <div>
+					<h2>floatを使って左から詰めていく</h2>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+	           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+	           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</div>
+				<div>
+					<h2>floatを使って左から詰めていく</h2>
+	        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+	           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+	           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</div>
+				<div>
+					<h2>floatを使って左から詰めていく</h2>
+	        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+	           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+	           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</div>
+			</div>
+		</section>
+
+    <section id="sec3">
+     <div class="box">
+       <h1>まずはお聞かせ下さい<br>御社の"中央寄せ"について</h1>
+       <p>PC版では段落を整えるために改行したい。しかしSP版では不用意な改行を入れたくない。そんな時はbrをdisplay:noneすると良いでしょう。</p>
+       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+       <p>
+         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br>
+         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+       </p>
+       <p>
+         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト、<br>
+         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ、<br>
+         テキストテキストテキストテキストテキストテキストテキストテキストテキス<br>
+         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキ。
+       </p>
+     </div>
+   </section>
+
+
+    <section id="sec4">
+      <div class="box port">
+    				<h1>制作実績</h1>
+    				<p>折り返しの列だけマージンを取らないレイアウトを行う場合は<br>
+    				「外側のulにマイナスマージンを入れる」「擬似クラス:nth-child()を使う」など、幾つかの手法があります。</p>
+        <ul class="bxslider">
+          <li><a href="#"><img src="img/thumb_01.jpg" alt="あいうえお"><p>あいうえお建設様</p></a></li>
+          <li><a href="#"><img src="img/thumb_02.jpg" alt="かきくけこ"><p>かきくけこ電気様</p></a></li>
+          <li><a href="#"><img src="img/thumb_03.jpg" alt="さしすせそ"><p>さしすせそ興業様</p></a></li>
+          <li><a href="#"><img src="img/thumb_04.jpg" alt="たちつてと"><p>たちつてと商事様</p></a></li>
+          <li><a href="#"><img src="img/thumb_05.jpg" alt="なにぬねの"><p>なにぬねの建設様</p></a></li>
+          <li><a href="#"><img src="img/thumb_06.jpg" alt="はひふへほ"><p>はひふへほ電気様</p></a></li>
+          <li><a href="#"><img src="img/thumb_07.jpg" alt="まみむめも"><p>まみむめも興行様</p></a></li>
+          <li><a href="#"><img src="img/thumb_01.jpg" alt="やゆよ"><p>やゆよ商事様</p></a></li>
+          <li><a href="#"><img src="img/thumb_02.jpg" alt="らりるれろ"><p>らりるれろ興行様</p></a></li>
+          <li><a href="#"><img src="img/thumb_03.jpg" alt="わをん"><p>わをん商事様</p></a></li>
+        </ul>
+      </div>
+    </section>
+  </article>
+
+<footer>
+  <p class="copyright">copyright &copy; DEMO all right reserved.</p>
+</footer>
+
+</body>
+</html>
+Ryuji Takamiyagi
